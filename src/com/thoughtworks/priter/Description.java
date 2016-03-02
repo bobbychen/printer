@@ -8,12 +8,14 @@ public class Description {
 	private String name;
 	private int num;
 	private double price;
-	private float sum;
-	private float save;
+	private double sum;
+	private double save;
 	
 	public Description(Good good) {
 		this.name = good.getName();
 		this.price = good.getPrice();
+	}
+	public Description() {
 	}
 	
 	public String getName() {
@@ -34,16 +36,16 @@ public class Description {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	public float getSum() {
+	public double getSum() {
 		return sum;
 	}
-	public void setSum(float sum) {
+	public void setSum(double sum) {
 		this.sum = sum;
 	}
-	public float getSave() {
+	public double getSave() {
 		return save;
 	}
-	public void setSave(float save) {
+	public void setSave(double save) {
 		this.save = save;
 	}
 	
@@ -56,6 +58,7 @@ public class Description {
 			sb.append("\t 节省:");
 			sb.append(this.save);
 		}
+		sb.append("\n");
 		return sb.toString();
 	}
 }
