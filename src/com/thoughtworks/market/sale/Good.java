@@ -33,6 +33,4 @@ public class Good {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
-
 }

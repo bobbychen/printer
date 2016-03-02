@@ -1,4 +1,4 @@
-package com.thouhtworks.priter;
+package com.thoughtworks.priter;
 
 import java.util.List;
 import java.util.Map;
